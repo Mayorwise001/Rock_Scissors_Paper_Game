@@ -1,0 +1,25 @@
+const arr = ["Rock", "Paper", "Scissor"]
+function getComputerChoice(){
+let i = Math.floor(Math.random() * arr.length)
+
+let result = "Rock"
+console.log(result)
+return result
+
+}
+
+let myChoice = getComputerChoice()
+console.log(myChoice)
+
+function playerSection(choice1, choice2){
+    if(choice1 === "Paper" && choice2 === "Rock"){
+        console.log("Choice1 you won")
+    }
+    else{
+        console.log("you lost")
+    }
+}
+
+let input = prompt("Enter your choice")
+
+playerSection(input, getComputerChoice())
