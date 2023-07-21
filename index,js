@@ -1,25 +1,45 @@
-const arr = ["Rock", "Paper", "Scissor"]
+const arr = ["rock", "paper", "scissor"]
 function getComputerChoice(){
 let i = Math.floor(Math.random() * arr.length)
 
-let result = "Rock"
+let result = arr[i]
 console.log(result)
 return result
 
 }
 
-let myChoice = getComputerChoice()
-console.log(myChoice)
+
 
 function playerSection(choice1, choice2){
-    if(choice1 === "Paper" && choice2 === "Rock"){
-        console.log("Choice1 you won")
+    if(choice1 === "paper" && choice2 === "rock"){
+        return("Choice1 you won")
+    }
+    
+    else if (choice1 === "scissor" && choice2 === "paper")
+    return("Choice1 you won")
+
+    else if(choice1 === "rock" && choice2 === "scissor")
+    return("Choice1 you won")
+    
+    else if(choice1 === "rock" && choice2 === "rock" || choice1 === "paper" && choice2 === "paper" || choice1 ==="scissor" && choice2 === "scissor"){
+        return("Its a tie")
     }
     else{
-        console.log("you lost")
+        return("Choice2 you won")
     }
 }
 
-let input = prompt("Enter your choice")
 
-playerSection(input, getComputerChoice())
+ let input
+let num = 2
+
+let i = 0
+while (i <= num){
+   
+    input = prompt("Enter your choice").toLowerCase();
+    console.log("Choice1", input)
+    console.log(playerSection(input, getComputerChoice()))
+    i++
+}
+
+playerSection(input, getComputerChoice());
