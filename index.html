@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Scissor Paper Game</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+<div id="text"></div>
+<div class="text2">
+    <button class="btn"><a href="index2.html"> Start Game</a></button>
+</div>
 
-<script src="index.js"></script>
+
+<script>
+    var i=0, text;
+    text =`Aliens are troubling the earth and we need you to save the earth.
+    Are you willing to take up this challenge?`
+    text2 = document.querySelector(".text2")
+
+    function typing(){
+        if(i<text.length){
+            document.getElementById("text").innerHTML += text.charAt(i);
+            i++
+            setTimeout(typing, 50);
+            text2.classList.add("appear")
+        }
+        else{
+        text2.classList.remove("appear")
+        }
+       
+    }
+    typing()
+</script>
 </body>
+
 </html>

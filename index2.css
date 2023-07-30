@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0PX;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(8, 8, 8);
+    color:white;
+}
+
+.header{
+    font-family: Creepster;
+    text-align: center;
+    color: rgb(187, 155, 24);
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+.content{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.btn{
+    width: 200px;
+    height: 200px;
+    /* position: absolute; */
+    display: inline-block;
+    background-color: rgb(1, 1, 1);
+    border: 2px solid rgb(187, 155, 24);
+    border-radius: 15px;
+}
+
+img{
+    /* padding-top: -1150px; */
+    /* padding-bottom: -1275px; */
+    
+    /* margin-right:0.5em; */
+    width: 70px;
+    height: auto;
+}
+
+.title{
+    text-align: center;
+    line-height: 25px;
+}
+
+.results{
+float: left;
+margin-top: 50px;
+margin-left: 130px;
+
+}
+.results h3{
+margin-left: 230px;
+text-align: left;
+font-size: 20px;
+line-height: 24px;
+font-family: arial;
+
+}
+.disappear {
+    display: none;
+  }
+.game{
+    margin-top: 70px;
+    margin-left: 450px;
+    font-family:'Shadows Into Light',cursive;
+    font-size: 40px;
+    
+}
+
+.appear{
+    display: block;
+}
+
+.results #comment{
+    font-size: 20px;
+    margin-bottom: 18px;
+    margin-top: 3px;
+    font-weight: bold;
+    
+}
+
+.tryagain{
+text-align: center;
+margin-left: 230px;
+width: 100px;
+height: 30px;
+background-color: white;
+border-color: transparent;
+border-radius: 5px;
+text-decoration: none;
+}
+
+.tryagain a{
+    text-decoration: none;
+    color: black;
+    
+}
