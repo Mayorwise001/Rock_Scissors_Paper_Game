@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+}
+
+.btn{
+    margin-top: 50px;
+    width: 270px;
+    height: 120px;
+    font-size: 50px;
+    background-color: green;
+    border-radius: 15px;
+    border-color: transparent;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition: 1s;
+
+}
+.btn a{
+    text-decoration: none;
+    color:white;
+    background-color: transparent
+
+
+}
+.btn:hover a{
+    
+    color: green;
+
+}
+
+.btn:hover{
+    color: green;
+    background-color: rgb(255, 255, 255);
+
+}
+  .text2{
+    display: block;
+}
+
+.appear{
+    display: none;
+}
